@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member';
+import { MEMBERS } from '../band';
 
 @Component({
   selector: 'app-band',
@@ -7,11 +8,7 @@ import { Member } from '../member';
   styleUrls: ['./band.component.css']
 })
 export class BandComponent implements OnInit {
-  members: Member[] = [
-    Member = {
-      name: 'Maxime'
-    }
-  ];
+  members: MEMBERS;
 
   selectedMember: Member;
 
