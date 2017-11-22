@@ -11,10 +11,17 @@ class Role(models.Model):
 class GearType(models.Model):
     name = models.CharField(max_length=256)
 
+    def __str__(self):
+        return self.name
+
 
 class Gear(models.Model):
     type = models.ForeignKey(GearType, on_delete=models.SET_NULL)
-    member = models.ForeignKey(Member, on_delete=models.CAS)
+    member = models.ForeignKey(Member, on_delete=models.CASCADE)
+    name = models.CharField(max_length=256)
+
+    def __str__(self):
+        return self.name
 
 
 class Member(models.Model):
@@ -22,7 +29,7 @@ class Member(models.Model):
     lastname = models.CharField(max_length=256)
     pseudo = models.CharField(max_length=64, blank=True)
     birth_date = models.DateField()
-    instrument = models.ForeignKey(Role, on_delete=models.SET_NULL)
+    roles = models.ManyToManyField(Role)
     avatar = models.ImageField()
 
     member_from = models.DateField()
@@ -39,12 +46,20 @@ class Song(models.Model):
     duration = models.DurationField()
     lyrics = models.TextField()
 
+    def __str__(self):
+        return self.title
+
 
 class Concert(models.Model):
     location_name = models.CharField(max_length=1024)
+    location = models.CharField(max_length=1024)
+    poster = models.ImageField()
     date = models.DateField()
     members = models.ManyToManyField(Member)
     set_list = models.ManyToManyField(Song)
+
+    def __str__(self):
+        return "%s (%s)" % (self.location_name, self.date, )
 
 
 class Picture(models.Model):
@@ -62,3 +77,6 @@ class Record(models.Model):
     title = models.CharField(max_length=1024)
     content = models.ManyToManyField(Song)
     artwork = models.ImageField(blank=True)
+
+    def __str__(self):
+        return self.title
