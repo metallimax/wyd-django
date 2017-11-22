@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { BandComponent } from './band/band.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BandComponent
   ],
   imports: [
     BrowserModule
