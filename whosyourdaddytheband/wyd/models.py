@@ -15,15 +15,6 @@ class GearType(models.Model):
         return self.name
 
 
-class Gear(models.Model):
-    type = models.ForeignKey(GearType, on_delete=models.SET_NULL)
-    member = models.ForeignKey(Member, on_delete=models.CASCADE)
-    name = models.CharField(max_length=256)
-
-    def __str__(self):
-        return self.name
-
-
 class Member(models.Model):
     firstname = models.CharField(max_length=256)
     lastname = models.CharField(max_length=256)
@@ -39,12 +30,21 @@ class Member(models.Model):
         return self.pseudo or ("%s %s" % (self.firstname, self.lastname, ))
 
 
+class Gear(models.Model):
+    type = models.ForeignKey(GearType, null=True, on_delete=models.SET_NULL)
+    member = models.ForeignKey(Member, on_delete=models.CASCADE)
+    name = models.CharField(max_length=256)
+
+    def __str__(self):
+        return self.name
+
+
 class Song(models.Model):
     title = models.CharField(max_length=1024)
-    authors = models.ManyToManyField(Member)
-    compositors = models.ManyToManyField(Member)
+    authors = models.ManyToManyField(Member, related_name="authors")
+    compositors = models.ManyToManyField(Member, related_name="compositors")
     duration = models.DurationField()
-    lyrics = models.TextField()
+    lyrics = models.TextField(blank=True)
 
     def __str__(self):
         return self.title
@@ -52,8 +52,8 @@ class Song(models.Model):
 
 class Concert(models.Model):
     location_name = models.CharField(max_length=1024)
-    location = models.CharField(max_length=1024)
-    poster = models.ImageField()
+    location = models.CharField(max_length=1024, blank=True)
+    poster = models.ImageField(blank=True)
     date = models.DateField()
     members = models.ManyToManyField(Member)
     set_list = models.ManyToManyField(Song)
