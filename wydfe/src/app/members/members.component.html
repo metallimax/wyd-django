@@ -1,0 +1,8 @@
+<h2>Band</h2>
+<ul class="band">
+  <li *ngFor="let member of members"
+    [class.selected]="member === selectedMember"
+    (click)="onSelect(member)">
+    <span class="badge">yo</span> {{member.name}}
+  </li>
+</ul>
