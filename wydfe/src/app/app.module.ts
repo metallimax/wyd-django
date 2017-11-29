@@ -4,17 +4,22 @@ import { MemberService } from './member.service';
 
 import { AppComponent } from './app.component';
 import { MembersComponent } from './members/members.component';
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MembersComponent
+    MembersComponent,
+    MessagesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [MemberService],
+  providers: [MemberService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

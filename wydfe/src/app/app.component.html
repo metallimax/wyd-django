@@ -1,7 +1,12 @@
 <div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+    <h1>
+        Welcome to {{title}}!
+    </h1>
 </div>
-<app-members></app-members>
 
+<nav>
+    <a routerLink="/members">Members</a>
+</nav>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>
