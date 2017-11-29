@@ -1,8 +1,21 @@
 from django.db import models
 
 
+class RoleManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
+
+
 class Role(models.Model):
+    objects = RoleManager()
+
     name = models.CharField(max_length=128)
+
+    class Meta:
+        unique_together = (('name',),)
+
+    def natural_key(self):
+        return str(self)
 
     def __str__(self):
         return self.name
@@ -24,7 +37,13 @@ class Member(models.Model):
     avatar = models.ImageField()
 
     member_from = models.DateField()
-    member_until = models.DateField(blank=True)
+    member_until = models.DateField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['birth_date']
+
+    def natural_key(self):
+        return str(self)
 
     def __str__(self):
         return self.pseudo or ("%s %s" % (self.firstname, self.lastname, ))

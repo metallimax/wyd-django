@@ -1,0 +1,9 @@
+<h2>Songs</h2>
+<ul class="songs">
+    <li *ngFor="let song of songs" [class.selected]="song === selectedSong" (click)="onSelect(song)">
+        <h3>{{song.fields.title}}</h3>
+        <div>Authors: {{song.fields.authors}}</div>
+        <div>Compositors: {{song.fields.compositors}}</div>
+        <div class="lyrics">{{song.fields.lyrics}}</div>
+    </li>
+</ul>

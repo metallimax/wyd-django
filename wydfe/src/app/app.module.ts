@@ -11,20 +11,24 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 
 import { AppRoutingModule } from './app-routing.module';
+import { SongsComponent } from './songs/songs.component';
+import { SongService } from './song.service';
+import { UrlService } from './url.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MembersComponent,
-    MessagesComponent
+    MessagesComponent,
+    SongsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [MemberService, MessageService],
+  providers: [MemberService, MessageService, SongService, UrlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

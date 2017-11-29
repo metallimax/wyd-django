@@ -4,23 +4,23 @@ import { of } from 'rxjs/observable/of';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
-import { Member } from './member';
+import { Song } from './song';
 
 import { MessageService } from './message.service';
 import { UrlService } from './url.service';
 
 @Injectable()
-export class MemberService {
+export class SongService {
 
   constructor(private http: HttpClient, private messageService: MessageService, private urlService: UrlService) { }
 
-  getMembers(): Observable<Member[]> {
-    return this.http.get<Member[]>(this.urlService.getUrl('members'))
-      .pipe(catchError(this.handleError('getMembers', [])));
+  getSongs(): Observable<Song[]> {
+    return this.http.get<Song[]>(this.urlService.getUrl('songs'))
+      .pipe(catchError(this.handleError('getSongs', [])));
   }
 
   private log(message: string) {
-    this.messageService.add('MemberService: ' + message);
+    this.messageService.add('SongService: ' + message);
   }
 
   private handleError<T> (operation = 'operation', result?: T) {

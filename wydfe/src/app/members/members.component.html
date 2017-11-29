@@ -1,6 +1,8 @@
-<h2>Band</h2>
-<ul class="band">
+<h2>Members</h2>
+<ul class="members">
     <li *ngFor="let member of members" [class.selected]="member === selectedMember" (click)="onSelect(member)">
-        <span class="badge">.</span> {{member.name}}
+        <img src="http://127.0.0.1:8000/media/{{member.fields.avatar}}" />
+        <div>{{member.fields.pseudo}}</div>
+        <div>roles: {{member.fields.roles.join(', ')}}</div>
     </li>
 </ul>
