@@ -122,7 +122,7 @@ class RecordTrack(models.Model):
         ordering = ['rank']
 
     def __str__(self):
-        return "%02d. %s" % (self.rank, self.song.title,)
+        return "%s: %02d. %s" % (self.record.title, self.rank, self.song.title,)
 
 
 class ConcertSetlist(models.Model):
@@ -131,7 +131,7 @@ class ConcertSetlist(models.Model):
     rank = models.IntegerField()
 
     class Meta:
-        ordering = ['rank']
+        ordering = ['concert', 'rank']
 
     def __str__(self):
-        return "%02d. %s" % (self.rank, self.song.title,)
+        return "%s: %02d. %s" % (self.concert.location_name, self.rank, self.song.title,)
