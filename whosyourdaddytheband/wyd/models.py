@@ -87,7 +87,7 @@ class Concert(models.Model):
     poster = models.ImageField(blank=True)
     date = models.DateField()
     members = models.ManyToManyField(Member)
-    set_list = models.ManyToManyField(Song, through='ConcertSetlist', through_fields=('concert', 'song', ))
+    setlist = models.ManyToManyField(Song, through='ConcertSetlist', through_fields=('concert', 'song', ))
 
     def __str__(self):
         return "%s (%s)" % (self.location_name, self.date,)
@@ -118,8 +118,20 @@ class RecordTrack(models.Model):
     song = models.ForeignKey(Song, on_delete=models.CASCADE)
     rank = models.IntegerField()
 
+    class Meta:
+        ordering = ['rank']
+
+    def __str__(self):
+        return "%02d. %s" % (self.rank, self.song.title,)
+
 
 class ConcertSetlist(models.Model):
     concert = models.ForeignKey(Concert, on_delete=models.CASCADE)
     song = models.ForeignKey(Song, on_delete=models.CASCADE)
     rank = models.IntegerField()
+
+    class Meta:
+        ordering = ['rank']
+
+    def __str__(self):
+        return "%02d. %s" % (self.rank, self.song.title,)
