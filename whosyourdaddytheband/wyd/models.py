@@ -1,3 +1,6 @@
+import os
+
+from django.conf import settings
 from django.db import models
 
 
@@ -9,10 +12,7 @@ class RoleManager(models.Manager):
 class Role(models.Model):
     objects = RoleManager()
 
-    name = models.CharField(max_length=128)
-
-    class Meta:
-        unique_together = (('name',),)
+    name = models.CharField(max_length=128, unique=True)
 
     def natural_key(self):
         return str(self)
@@ -45,17 +45,26 @@ class Member(models.Model):
     def natural_key(self):
         return str(self)
 
+    def name(self):
+        return self.pseudo or ("%s %s" % (self.firstname, self.lastname,))
+
+    def avatar_url(self):
+        return os.path.join(settings.MEDIA_URL, self.avatar.name)
+
     def __str__(self):
-        return self.pseudo or ("%s %s" % (self.firstname, self.lastname, ))
+        return self.name()
 
 
 class Gear(models.Model):
     type = models.ForeignKey(GearType, null=True, on_delete=models.SET_NULL)
-    member = models.ForeignKey(Member, on_delete=models.CASCADE)
+    member = models.ForeignKey(Member, related_name='gears', on_delete=models.CASCADE)
     name = models.CharField(max_length=256)
 
     def __str__(self):
-        return self.name
+        return "%s" % (self.name,)
+
+    def natural_key(self):
+        return {'name': self.name, 'type': self.type.name, }
 
 
 class Song(models.Model):
@@ -68,6 +77,9 @@ class Song(models.Model):
     def __str__(self):
         return self.title
 
+    def html_lyrics(self):
+        return self.lyrics.replace('\r', '').replace('\n', '<br/>\n')
+
 
 class Concert(models.Model):
     location_name = models.CharField(max_length=1024)
@@ -75,10 +87,10 @@ class Concert(models.Model):
     poster = models.ImageField(blank=True)
     date = models.DateField()
     members = models.ManyToManyField(Member)
-    set_list = models.ManyToManyField(Song)
+    set_list = models.ManyToManyField(Song, through='ConcertSetlist', through_fields=('concert', 'song', ))
 
     def __str__(self):
-        return "%s (%s)" % (self.location_name, self.date, )
+        return "%s (%s)" % (self.location_name, self.date,)
 
 
 class Picture(models.Model):
@@ -94,8 +106,20 @@ class Video(models.Model):
 
 class Record(models.Model):
     title = models.CharField(max_length=1024)
-    content = models.ManyToManyField(Song)
+    content = models.ManyToManyField(Song, through='RecordTrack', through_fields=('record', 'song', ))
     artwork = models.ImageField(blank=True)
 
     def __str__(self):
         return self.title
+
+
+class RecordTrack(models.Model):
+    record = models.ForeignKey(Record, on_delete=models.CASCADE)
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+    rank = models.IntegerField()
+
+
+class ConcertSetlist(models.Model):
+    concert = models.ForeignKey(Concert, on_delete=models.CASCADE)
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+    rank = models.IntegerField()
