@@ -12,12 +12,22 @@ export class MembersComponent implements OnInit {
 
   selectedMember: Member;
 
+  active: boolean;
+
   constructor(private memberService: MemberService) { }
 
   isActive(member: Member): boolean {
     return member.member_until == null;
   }
-  getActiveMembers(): Member[] {
+  
+    isInactive(member: Member): boolean {
+      return member.member_until != null;
+    }
+
+  getActiveMembers(active: boolean): Member[] {
+    if(!active) {
+      return this.members.filter(this.isInactive);
+    }
     return this.members.filter(this.isActive);
   }
 
@@ -28,6 +38,7 @@ export class MembersComponent implements OnInit {
 
   ngOnInit() {
     this.getMembers();
+    this.active = true;
   }
 
   onSelect(member: Member): void {

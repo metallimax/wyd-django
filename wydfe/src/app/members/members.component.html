@@ -1,9 +1,9 @@
 <h2>Members</h2>
 <ul class="members">
-    <li *ngFor="let member of getActiveMembers()"
+    <li *ngFor="let member of getActiveMembers(active)"
      [class.selected]="member === selectedMember" (click)="onSelect(member)">
         <img src="http://127.0.0.1:8000{{member.avatar_url}}" />
-        <div>{{member.name}} ({{member.member_until}})</div>
+        <div>{{member.name}}</div>
         <div>roles: 
             <ul>
                 <li *ngFor="let role of member.roles">{{role.name}}</li>
