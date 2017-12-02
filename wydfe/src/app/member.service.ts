@@ -15,7 +15,7 @@ export class MemberService {
   constructor(private http: HttpClient, private messageService: MessageService, private urlService: UrlService) { }
 
   getMembers(): Observable<Member[]> {
-    return this.http.get<Member[]>(this.urlService.getUrl('members'))
+    return this.http.get<Member[]>(this.urlService.getWebserviceUrl('members'))
       .pipe(catchError(this.handleError('getMembers', [])));
   }
 

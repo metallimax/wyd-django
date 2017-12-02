@@ -1,14 +1,12 @@
+class Gear {
+  name: string;
+  type: string;
+}
+
 export class Member {
-  model: string;
-  pk: number;
-  fields: {
-    firstname: string;
-    lastname: string;
-    pseudo: string;
-    birth_date: string;
-    avatar: string;
-    member_from: string;
-    member_until: string;
-  };
+  name: string;
+  avatar_url: string;
+  member_until: string;
+  gears: Gear[];
   roles: string[];
 }

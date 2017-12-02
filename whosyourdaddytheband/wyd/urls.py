@@ -10,6 +10,11 @@ class GearRelatedField(serializers.RelatedField):
         return {'name': value.name, 'type': value.type.name, }
 
 
+class RoleRelatedField(serializers.RelatedField):
+    def to_representation(self, value):
+        return {'name': value.name, }
+
+
 class MemberRelatedField(serializers.RelatedField):
     def to_representation(self, value):
         return {'name': value.name(), }
@@ -22,10 +27,11 @@ class SongRelatedField(serializers.RelatedField):
 
 class MemberSerializer(serializers.ModelSerializer):
     gears = GearRelatedField(many=True, read_only=True)
+    roles = RoleRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Member
-        fields = ('name', 'avatar_url', 'gears', )
+        fields = ('name', 'avatar_url', 'member_until', 'gears', 'roles', )
 
 
 class MemberViewSet(viewsets.ModelViewSet):

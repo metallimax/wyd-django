@@ -15,7 +15,7 @@ export class SongService {
   constructor(private http: HttpClient, private messageService: MessageService, private urlService: UrlService) { }
 
   getSongs(): Observable<Song[]> {
-    return this.http.get<Song[]>(this.urlService.getUrl('songs'))
+    return this.http.get<Song[]>(this.urlService.getWebserviceUrl('songs'))
       .pipe(catchError(this.handleError('getSongs', [])));
   }
 

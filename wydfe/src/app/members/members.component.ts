@@ -14,6 +14,13 @@ export class MembersComponent implements OnInit {
 
   constructor(private memberService: MemberService) { }
 
+  isActive(member: Member): boolean {
+    return member.member_until == null;
+  }
+  getActiveMembers(): Member[] {
+    return this.members.filter(this.isActive);
+  }
+
   getMembers(): void {
     this.memberService.getMembers()
       .subscribe(members => this.members = members);
