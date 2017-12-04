@@ -20,9 +20,14 @@ class MemberRelatedField(serializers.RelatedField):
         return {'name': value.name(), }
 
 
-class SongRelatedField(serializers.RelatedField):
+class SetlistRelatedField(serializers.RelatedField):
     def to_representation(self, value):
-        return {'title': value.title, }
+        return {'title': value.song.title, 'rank': "%02d" % (value.rank, ), }
+
+
+class TrackRelatedField(serializers.RelatedField):
+    def to_representation(self, value):
+        return {'title': value.song.title, 'rank': "%02d" % (value.rank,), }
 
 
 class MemberSerializer(serializers.ModelSerializer):
@@ -53,31 +58,30 @@ class SongViewSet(viewsets.ModelViewSet):
     serializer_class = SongSerializer
 
 
-class RecordSerializer(serializers.ModelSerializer):
-    content = SongRelatedField(many=True, read_only=True)
-
-    class Meta:
-        model = Record
-        fields = ('title', 'content', )
-
-
-class RecordViewSet(viewsets.ModelViewSet):
-    queryset = Record.objects.all()
-    serializer_class = RecordSerializer
-
-
 class ConcertSerializer(serializers.ModelSerializer):
-    members = MemberRelatedField(many=True, read_only=True)
-    set_list = SongRelatedField(many=True, read_only=True)
+    concertsetlist_set = SetlistRelatedField(many=True, read_only=True)
 
     class Meta:
         model = Concert
-        fields = ('location_name', 'location', 'date', 'members', 'set_list', )
+        fields = ('location_name', 'concertsetlist_set', )
 
 
 class ConcertViewSet(viewsets.ModelViewSet):
     queryset = Concert.objects.all()
     serializer_class = ConcertSerializer
+
+
+class RecordSerializer(serializers.ModelSerializer):
+    recordtrack_set = TrackRelatedField(many=True, read_only=True)
+
+    class Meta:
+        model = Record
+        fields = ('title', 'recordtrack_set', )
+
+
+class RecordViewSet(viewsets.ModelViewSet):
+    queryset = Record.objects.all()
+    serializer_class = RecordSerializer
 
 
 router = routers.DefaultRouter()

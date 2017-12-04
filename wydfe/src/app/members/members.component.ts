@@ -26,7 +26,7 @@ export class MembersComponent implements OnInit {
   }
 
   getActiveMembers(active: boolean): Member[] {
-    if(!active) {
+    if (!active) {
       return this.members.filter(this.isInactive);
     }
     return this.members.filter(this.isActive);

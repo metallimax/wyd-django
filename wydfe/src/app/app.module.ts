@@ -16,6 +16,8 @@ import { SongService } from './song.service';
 import { UrlService } from './url.service';
 import { ConcertService } from './concert.service';
 import { RecordService } from './record.service';
+import { RecordsComponent } from './records/records.component';
+import { ConcertsComponent } from './concerts/concerts.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { RecordService } from './record.service';
     AppComponent,
     MembersComponent,
     MessagesComponent,
-    SongsComponent
+    SongsComponent,
+    RecordsComponent,
+    ConcertsComponent
   ],
   imports: [
     BrowserModule,

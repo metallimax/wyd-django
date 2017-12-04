@@ -23,7 +23,7 @@ export class MemberService {
     this.messageService.add('MemberService: ' + message);
   }
 
-  private handleError<T> (operation = 'operation', result?: T) {
+  private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 
       // TODO: send the error to remote logging infrastructure
