@@ -1,1 +1,972 @@
-[{"model": "wyd.role", "pk": 1, "fields": {"name": "Guitar"}}, {"model": "wyd.role", "pk": 2, "fields": {"name": "Lead vocals"}}, {"model": "wyd.role", "pk": 3, "fields": {"name": "Drums"}}, {"model": "wyd.role", "pk": 4, "fields": {"name": "Bass"}}, {"model": "wyd.role", "pk": 5, "fields": {"name": "Backing vocals"}}, {"model": "wyd.geartype", "pk": 1, "fields": {"name": "Effect"}}, {"model": "wyd.geartype", "pk": 2, "fields": {"name": "Guitar amplifier"}}, {"model": "wyd.geartype", "pk": 3, "fields": {"name": "Guitar"}}, {"model": "wyd.geartype", "pk": 4, "fields": {"name": "Microphone"}}, {"model": "wyd.geartype", "pk": 5, "fields": {"name": "Looper/Switcher"}}, {"model": "wyd.geartype", "pk": 6, "fields": {"name": "Power supply"}}, {"model": "wyd.geartype", "pk": 7, "fields": {"name": "Tuner"}}, {"model": "wyd.geartype", "pk": 8, "fields": {"name": "Noise gate"}}, {"model": "wyd.geartype", "pk": 9, "fields": {"name": "Bass"}}, {"model": "wyd.member", "pk": 1, "fields": {"firstname": "Maxime", "lastname": "Delrieu", "pseudo": "Max", "birth_date": "1978-10-05", "avatar": "L_A069.tmp_zAeGiVU.PNG", "member_from": "2012-01-01", "member_until": null, "roles": [1, 2]}}, {"model": "wyd.member", "pk": 2, "fields": {"firstname": "David", "lastname": "Billard", "pseudo": "David", "birth_date": "1979-05-10", "avatar": "billard.jpg", "member_from": "2012-01-01", "member_until": null, "roles": [3]}}, {"model": "wyd.member", "pk": 3, "fields": {"firstname": "Benjamin", "lastname": "Vincent", "pseudo": "Benji", "birth_date": "1989-12-05", "avatar": "Benji.jpg", "member_from": "2012-01-01", "member_until": null, "roles": [4, 5]}}, {"model": "wyd.member", "pk": 4, "fields": {"firstname": "Pierre-Yves", "lastname": "Kugler", "pseudo": "Pyk", "birth_date": "1995-04-18", "avatar": "Pyk.jpg", "member_from": "2015-01-01", "member_until": null, "roles": [1, 5]}}, {"model": "wyd.member", "pk": 5, "fields": {"firstname": "Andr\u00e9", "lastname": "Schmickler", "pseudo": "Dredre", "birth_date": "1991-09-28", "avatar": "dredre.jpg", "member_from": "2014-01-01", "member_until": "2015-08-31", "roles": [1]}}, {"model": "wyd.gear", "pk": 1, "fields": {"type": 1, "member": 1, "name": "Dunlop Cry Baby"}}, {"model": "wyd.gear", "pk": 2, "fields": {"type": 1, "member": 1, "name": "EHX East River Drive"}}, {"model": "wyd.gear", "pk": 3, "fields": {"type": 1, "member": 1, "name": "EHX Hot Tubes Nano"}}, {"model": "wyd.gear", "pk": 4, "fields": {"type": 1, "member": 1, "name": "EHX Neo Clone"}}, {"model": "wyd.gear", "pk": 5, "fields": {"type": 1, "member": 1, "name": "EHX Neo Mistress"}}, {"model": "wyd.gear", "pk": 6, "fields": {"type": 1, "member": 1, "name": "MXR Phaser Phase 90"}}, {"model": "wyd.gear", "pk": 7, "fields": {"type": 1, "member": 1, "name": "G-Lab Smooth Delay SD-1"}}, {"model": "wyd.gear", "pk": 8, "fields": {"type": 1, "member": 1, "name": "Morley Alligator Volume"}}, {"model": "wyd.gear", "pk": 9, "fields": {"type": 1, "member": 1, "name": "Visual Sound Garagetone Tremolo"}}, {"model": "wyd.gear", "pk": 10, "fields": {"type": 1, "member": 1, "name": "MXR 10-Band Graphic EQ M108"}}, {"model": "wyd.gear", "pk": 11, "fields": {"type": 2, "member": 1, "name": "Peavey XXX II w/ Marshall 1960AV Cabinet"}}, {"model": "wyd.gear", "pk": 12, "fields": {"type": 2, "member": 1, "name": "Marshall JCM 2000 DSL 401"}}, {"model": "wyd.gear", "pk": 13, "fields": {"type": 3, "member": 1, "name": "Jackson RR"}}, {"model": "wyd.gear", "pk": 14, "fields": {"type": 3, "member": 1, "name": "Jackson Kelly"}}, {"model": "wyd.gear", "pk": 15, "fields": {"type": 3, "member": 1, "name": "Chapman Ghostfret"}}, {"model": "wyd.gear", "pk": 16, "fields": {"type": 4, "member": 1, "name": "Shure 55 w/ custom bent stand"}}, {"model": "wyd.gear", "pk": 17, "fields": {"type": 5, "member": 1, "name": "G-Lab GSC-3"}}, {"model": "wyd.gear", "pk": 18, "fields": {"type": 5, "member": 1, "name": "G-Lab MIDI 2x Loop M2L (x2)"}}, {"model": "wyd.gear", "pk": 19, "fields": {"type": 6, "member": 1, "name": "Flatliner SIX"}}, {"model": "wyd.gear", "pk": 20, "fields": {"type": 6, "member": 1, "name": "G-Lab 8 Separated 9V Power Box PB-1"}}, {"model": "wyd.gear", "pk": 21, "fields": {"type": 7, "member": 1, "name": "Planet Waves PW-CT-11 Tru-Strobe Tuner"}}, {"model": "wyd.gear", "pk": 22, "fields": {"type": 8, "member": 1, "name": "ISP Noise Gate Decimator G String"}}, {"model": "wyd.gear", "pk": 23, "fields": {"type": 9, "member": 3, "name": "Schecter Hellaiser Extreme 5"}}, {"model": "wyd.gear", "pk": 24, "fields": {"type": 9, "member": 3, "name": "LTD B-1005"}}, {"model": "wyd.gear", "pk": 25, "fields": {"type": 1, "member": 3, "name": "Dunlop Bass Q Crybaby Wha"}}, {"model": "wyd.gear", "pk": 26, "fields": {"type": 1, "member": 3, "name": "Bass Overdrive Boss ODB-3"}}, {"model": "wyd.gear", "pk": 27, "fields": {"type": 1, "member": 3, "name": "T-Rex Tonebug Chorus/Flanger"}}, {"model": "wyd.gear", "pk": 28, "fields": {"type": 7, "member": 3, "name": "Planet Waves PW-CT-11 Tru-Strobe Tuner"}}, {"model": "wyd.gear", "pk": 29, "fields": {"type": 1, "member": 3, "name": "Zvex Fuzz"}}, {"model": "wyd.gear", "pk": 30, "fields": {"type": 3, "member": 4, "name": "ESP LTD M-400"}}, {"model": "wyd.gear", "pk": 31, "fields": {"type": 3, "member": 4, "name": "Jackson Warrior"}}, {"model": "wyd.gear", "pk": 32, "fields": {"type": 3, "member": 4, "name": "Gibson Les Paul"}}, {"model": "wyd.gear", "pk": 33, "fields": {"type": 1, "member": 4, "name": "Visual Sound Double Trouble"}}, {"model": "wyd.gear", "pk": 34, "fields": {"type": 7, "member": 4, "name": "Boss TU-3"}}, {"model": "wyd.song", "pk": 1, "fields": {"title": "Build My Hate", "duration": "00:03:07", "lyrics": "Your mouth is full of lies\r\nPretending to teach us\r\nWhat's good or bad for us\r\nThinking of you\r\n\r\nServing your interest\r\nPlayin' the super hero\r\nWith ease because you're not\r\nIn the front\r\n\r\n[Chorus]\r\nThose people are dangerous\r\nYou lie to all of us\r\nThey will kill everyone\r\nYou just believe yourself\r\nThe threatening is from out there\r\nI won't allow you to\r\nBuild my hate you know\r\n\r\nInvoking will of god\r\nYou try to blind us all\r\nTo be sure you'll be heard\r\nHolier is better\r\n\r\nYou think that speaking loud\r\nAssure you attention\r\nBut don't you see we're replete\r\nWith the shit you feed\r\n\r\n[Chorus]\r\n\r\nI won't let you build my\r\nHAAAAATE\r\nBuild my hate you know\r\nBuil-my-hate-you-know", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 2, "fields": {"title": "Hester Mofet", "duration": "00:07:08", "lyrics": "Hester Mofet\u2019s been broken\r\nShe was living with no problem\r\n\u2018N then she met a hurricane\r\nBut nobody have seen her again\r\n\r\nHester Mofet has been ruined\r\nToughly hurt by any mean\r\nPersecuted in deep sorrow\r\nAll she has left is her shadow\r\n\r\n[Chorus]\r\nHester Mofet is still alive\r\nAnd if one day she would have died\r\nHer body starts to come undone\r\nThen resurrecting from the dark\r\nHester Mofet is gonna burn\r\nAnd even swallowed by the flames\r\nTot\u2019ly reduced to smoky ash\r\nShe seems to be a fire-bird\r\nTurning to life again\r\nHester Mofet has been raped\r\nHer mind has been hard twisted\r\nShe was trampled so much times\r\nSo she was buried in the ground\r\n\r\nHester Mofet\u2019s compromised\r\nShe\u2019s been taken by surprise\r\nHer back has just felt the knife\r\nAnd then she fell within the night\r\n\r\n[Chorus]\r\n\r\nHester Mofet has been mistreated\r\nSo much of us witnessed it\r\nBut just a few has helped her stand\r\nSo blind we are from some misdeed\r\n\r\nHester Mofet !!!\r\n\r\nNO! NO! NO NO NO NO!", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 3, "fields": {"title": "Let's Give a Hand", "duration": "00:05:06", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 4, "fields": {"title": "Motoriplash", "duration": "00:05:00", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 5, "fields": {"title": "Ravage", "duration": "00:06:38", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 6, "fields": {"title": "K.Y.M.S.", "duration": "00:04:30", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 7, "fields": {"title": "My Crusade", "duration": "00:03:21", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 8, "fields": {"title": "Cabal", "duration": "00:03:48", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 9, "fields": {"title": "Legal Canibal", "duration": "00:03:43", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 10, "fields": {"title": "Blast My Karma", "duration": "00:04:00", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 11, "fields": {"title": "Until We Die", "duration": "00:03:00", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 12, "fields": {"title": "Fallen Prince", "duration": "00:03:20", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.song", "pk": 13, "fields": {"title": "Intro live 01", "duration": "00:30:00", "lyrics": "", "authors": [1], "compositors": [1]}}, {"model": "wyd.concert", "pk": 1, "fields": {"location_name": "Vaches Folks 2017", "location": "", "poster": "", "date": "2017-07-07", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 2, "fields": {"location_name": "F\u00eate de la musique d'Albertville 2014", "location": "", "poster": "", "date": "2014-06-21", "members": [1, 2, 3, 5]}}, {"model": "wyd.concert", "pk": 3, "fields": {"location_name": "Zikolokos prend l'air 2014", "location": "", "poster": "", "date": "2014-09-13", "members": [1, 2, 3, 5]}}, {"model": "wyd.concert", "pk": 4, "fields": {"location_name": "Anniversaire de mariage d'Hermann", "location": "", "poster": "", "date": "2015-12-12", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 5, "fields": {"location_name": "Chez Dre", "location": "", "poster": "", "date": "2016-01-09", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 6, "fields": {"location_name": "F\u00eate de la musique de Gex 2016", "location": "", "poster": "", "date": "2016-06-21", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 7, "fields": {"location_name": "Undertown", "location": "", "poster": "", "date": "2016-09-17", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 8, "fields": {"location_name": "Microbrasserie La Fabrique", "location": "", "poster": "", "date": "2017-03-11", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 9, "fields": {"location_name": "Music City Tour @ Bouffon de la Taverne", "location": "", "poster": "", "date": "2017-04-21", "members": [1, 2, 3, 4]}}, {"model": "wyd.concert", "pk": 10, "fields": {"location_name": "Les P\u00e2quis Sont \u00e0 la Rue 2017", "location": "", "poster": "", "date": "2017-06-17", "members": [1, 2, 3, 4]}}, {"model": "wyd.record", "pk": 1, "fields": {"title": "Who's Your EP", "artwork": ""}}, {"model": "wyd.recordtrack", "pk": 1, "fields": {"record": 1, "song": 1, "rank": 1}}, {"model": "wyd.recordtrack", "pk": 2, "fields": {"record": 1, "song": 9, "rank": 2}}, {"model": "wyd.recordtrack", "pk": 3, "fields": {"record": 1, "song": 5, "rank": 3}}, {"model": "wyd.recordtrack", "pk": 4, "fields": {"record": 1, "song": 11, "rank": 4}}, {"model": "wyd.concertsetlist", "pk": 1, "fields": {"concert": 1, "song": 13, "rank": 0}}, {"model": "wyd.concertsetlist", "pk": 2, "fields": {"concert": 1, "song": 1, "rank": 1}}, {"model": "wyd.concertsetlist", "pk": 3, "fields": {"concert": 1, "song": 6, "rank": 2}}, {"model": "wyd.concertsetlist", "pk": 4, "fields": {"concert": 1, "song": 9, "rank": 3}}, {"model": "wyd.concertsetlist", "pk": 5, "fields": {"concert": 1, "song": 8, "rank": 4}}, {"model": "wyd.concertsetlist", "pk": 6, "fields": {"concert": 1, "song": 7, "rank": 5}}, {"model": "wyd.concertsetlist", "pk": 7, "fields": {"concert": 1, "song": 2, "rank": 6}}, {"model": "wyd.concertsetlist", "pk": 8, "fields": {"concert": 1, "song": 5, "rank": 7}}, {"model": "wyd.concertsetlist", "pk": 9, "fields": {"concert": 1, "song": 10, "rank": 10}}, {"model": "wyd.concertsetlist", "pk": 10, "fields": {"concert": 1, "song": 11, "rank": 9}}, {"model": "wyd.concertsetlist", "pk": 11, "fields": {"concert": 2, "song": 13, "rank": 0}}, {"model": "wyd.concertsetlist", "pk": 12, "fields": {"concert": 2, "song": 1, "rank": 1}}, {"model": "wyd.concertsetlist", "pk": 13, "fields": {"concert": 1, "song": 3, "rank": 8}}, {"model": "wyd.concertsetlist", "pk": 14, "fields": {"concert": 2, "song": 6, "rank": 2}}, {"model": "wyd.concertsetlist", "pk": 15, "fields": {"concert": 2, "song": 2, "rank": 3}}, {"model": "wyd.concertsetlist", "pk": 16, "fields": {"concert": 2, "song": 5, "rank": 4}}, {"model": "wyd.concertsetlist", "pk": 17, "fields": {"concert": 2, "song": 3, "rank": 5}}, {"model": "wyd.concertsetlist", "pk": 18, "fields": {"concert": 2, "song": 4, "rank": 6}}, {"model": "wyd.concertsetlist", "pk": 19, "fields": {"concert": 3, "song": 13, "rank": 0}}, {"model": "wyd.concertsetlist", "pk": 20, "fields": {"concert": 3, "song": 1, "rank": 1}}, {"model": "wyd.concertsetlist", "pk": 21, "fields": {"concert": 3, "song": 7, "rank": 2}}, {"model": "wyd.concertsetlist", "pk": 22, "fields": {"concert": 3, "song": 6, "rank": 3}}, {"model": "wyd.concertsetlist", "pk": 23, "fields": {"concert": 3, "song": 2, "rank": 4}}, {"model": "wyd.concertsetlist", "pk": 24, "fields": {"concert": 3, "song": 5, "rank": 5}}, {"model": "wyd.concertsetlist", "pk": 25, "fields": {"concert": 3, "song": 3, "rank": 6}}, {"model": "wyd.concertsetlist", "pk": 26, "fields": {"concert": 3, "song": 4, "rank": 7}}, {"model": "wyd.concertsetlist", "pk": 27, "fields": {"concert": 3, "song": 1, "rank": 8}}, {"model": "wyd.concertsetlist", "pk": 28, "fields": {"concert": 4, "song": 13, "rank": 0}}, {"model": "wyd.concertsetlist", "pk": 29, "fields": {"concert": 4, "song": 1, "rank": 1}}, {"model": "wyd.concertsetlist", "pk": 30, "fields": {"concert": 4, "song": 7, "rank": 2}}, {"model": "wyd.concertsetlist", "pk": 31, "fields": {"concert": 4, "song": 5, "rank": 3}}, {"model": "wyd.concertsetlist", "pk": 32, "fields": {"concert": 4, "song": 8, "rank": 4}}, {"model": "wyd.concertsetlist", "pk": 33, "fields": {"concert": 4, "song": 9, "rank": 5}}, {"model": "wyd.concertsetlist", "pk": 34, "fields": {"concert": 4, "song": 11, "rank": 6}}, {"model": "wyd.concertsetlist", "pk": 35, "fields": {"concert": 4, "song": 10, "rank": 7}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "wyd", "model": "concert"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "wyd", "model": "gear"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "wyd", "model": "geartype"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "wyd", "model": "member"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "wyd", "model": "picture"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "wyd", "model": "record"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "wyd", "model": "recordtrack"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "wyd", "model": "role"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "wyd", "model": "song"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "wyd", "model": "video"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 17, "fields": {"app_label": "wyd", "model": "concertsetlist"}}, {"model": "sessions.session", "pk": "bjgjhnfosfred1dbsfdqnbktt5zbkbeu", "fields": {"session_data": "MDAyYjQ2YmI0NzgxN2ViY2M0MDczOTlmZTM4M2UwMGM2YTJlZWZiMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmOGQ0OWYzN2VkNjk4Nzk0Zjk1NTdlNmU3MDJiMGQwOWFmYTA0OWU4In0=", "expire_date": "2017-12-15T18:01:30.034Z"}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add concert", "content_type": 1, "codename": "add_concert"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change concert", "content_type": 1, "codename": "change_concert"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete concert", "content_type": 1, "codename": "delete_concert"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can add gear", "content_type": 2, "codename": "add_gear"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can change gear", "content_type": 2, "codename": "change_gear"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can delete gear", "content_type": 2, "codename": "delete_gear"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can add gear type", "content_type": 3, "codename": "add_geartype"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can change gear type", "content_type": 3, "codename": "change_geartype"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can delete gear type", "content_type": 3, "codename": "delete_geartype"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can add member", "content_type": 4, "codename": "add_member"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can change member", "content_type": 4, "codename": "change_member"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can delete member", "content_type": 4, "codename": "delete_member"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add picture", "content_type": 5, "codename": "add_picture"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change picture", "content_type": 5, "codename": "change_picture"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete picture", "content_type": 5, "codename": "delete_picture"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can add record", "content_type": 6, "codename": "add_record"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can change record", "content_type": 6, "codename": "change_record"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can delete record", "content_type": 6, "codename": "delete_record"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can add record track", "content_type": 7, "codename": "add_recordtrack"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can change record track", "content_type": 7, "codename": "change_recordtrack"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can delete record track", "content_type": 7, "codename": "delete_recordtrack"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can add role", "content_type": 8, "codename": "add_role"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can change role", "content_type": 8, "codename": "change_role"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can delete role", "content_type": 8, "codename": "delete_role"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add song", "content_type": 9, "codename": "add_song"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change song", "content_type": 9, "codename": "change_song"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete song", "content_type": 9, "codename": "delete_song"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can add video", "content_type": 10, "codename": "add_video"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can change video", "content_type": 10, "codename": "change_video"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can delete video", "content_type": 10, "codename": "delete_video"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can add log entry", "content_type": 11, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can change log entry", "content_type": 11, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can delete log entry", "content_type": 11, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can add permission", "content_type": 12, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can change permission", "content_type": 12, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can delete permission", "content_type": 12, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add group", "content_type": 13, "codename": "add_group"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change group", "content_type": 13, "codename": "change_group"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete group", "content_type": 13, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can add user", "content_type": 14, "codename": "add_user"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can change user", "content_type": 14, "codename": "change_user"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can delete user", "content_type": 14, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can add content type", "content_type": 15, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can change content type", "content_type": 15, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can delete content type", "content_type": 15, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can add session", "content_type": 16, "codename": "add_session"}}, {"model": "auth.permission", "pk": 47, "fields": {"name": "Can change session", "content_type": 16, "codename": "change_session"}}, {"model": "auth.permission", "pk": 48, "fields": {"name": "Can delete session", "content_type": 16, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can add concert setlist", "content_type": 17, "codename": "add_concertsetlist"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can change concert setlist", "content_type": 17, "codename": "change_concertsetlist"}}, {"model": "auth.permission", "pk": 51, "fields": {"name": "Can delete concert setlist", "content_type": 17, "codename": "delete_concertsetlist"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$36000$bDxQ5MFrpEq3$p83yiJqoyV3nCz1Dlny096ocaQAImc2lUwWsFowbiJ0=", "last_login": "2017-12-01T18:01:30.016Z", "is_superuser": true, "username": "admin", "first_name": "", "last_name": "", "email": "maxime.delrieu@gmail.com", "is_staff": true, "is_active": true, "date_joined": "2017-12-01T18:00:59.916Z", "groups": [], "user_permissions": []}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2017-12-01T22:49:36.370Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "Let's Give a Hand", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2017-12-01T22:50:15.867Z", "user": 1, "content_type": 9, "object_id": "4", "object_repr": "Motoriplash", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2017-12-01T22:50:51.335Z", "user": 1, "content_type": 9, "object_id": "5", "object_repr": "Ravage", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2017-12-01T22:51:13.681Z", "user": 1, "content_type": 9, "object_id": "6", "object_repr": "K.Y.M.S.", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2017-12-01T22:51:29.388Z", "user": 1, "content_type": 9, "object_id": "7", "object_repr": "My Crusade", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2017-12-01T22:51:44.580Z", "user": 1, "content_type": 9, "object_id": "8", "object_repr": "Cabal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2017-12-01T22:51:58.479Z", "user": 1, "content_type": 9, "object_id": "9", "object_repr": "Legal Canibal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2017-12-01T22:52:15.305Z", "user": 1, "content_type": 9, "object_id": "10", "object_repr": "Blast My Karma", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2017-12-01T22:52:29.765Z", "user": 1, "content_type": 9, "object_id": "11", "object_repr": "Until We Die", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2017-12-01T22:53:08.257Z", "user": 1, "content_type": 9, "object_id": "12", "object_repr": "Fallen Prince", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2017-12-01T22:53:34.213Z", "user": 1, "content_type": 9, "object_id": "13", "object_repr": "Intro live 01", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2017-12-01T22:54:22.252Z", "user": 1, "content_type": 6, "object_id": "1", "object_repr": "Who's Your EP", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2017-12-01T22:54:39.774Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "RecordTrack object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2017-12-01T22:54:46.079Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "RecordTrack object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2017-12-01T22:54:54.462Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "RecordTrack object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2017-12-01T22:55:00.672Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "RecordTrack object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2017-12-01T23:00:09.188Z", "user": 1, "content_type": 1, "object_id": "1", "object_repr": "Vaches Folks (2017-07-08)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2017-12-01T23:00:36.952Z", "user": 1, "content_type": 17, "object_id": "1", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2017-12-01T23:00:44.374Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2017-12-01T23:00:52.259Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2017-12-01T23:01:12.304Z", "user": 1, "content_type": 17, "object_id": "4", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2017-12-01T23:01:18.623Z", "user": 1, "content_type": 17, "object_id": "5", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2017-12-01T23:01:29.334Z", "user": 1, "content_type": 17, "object_id": "6", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2017-12-01T23:01:39.475Z", "user": 1, "content_type": 17, "object_id": "7", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2017-12-01T23:01:47.912Z", "user": 1, "content_type": 17, "object_id": "8", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2017-12-01T23:01:57.156Z", "user": 1, "content_type": 17, "object_id": "9", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2017-12-01T23:02:14.446Z", "user": 1, "content_type": 17, "object_id": "10", "object_repr": "ConcertSetlist object", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2017-12-01T23:03:58.912Z", "user": 1, "content_type": 17, "object_id": "1", "object_repr": "00. Intro live 01", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2017-12-01T23:04:02.315Z", "user": 1, "content_type": 17, "object_id": "2", "object_repr": "01. Build My Hate", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2017-12-01T23:04:06.521Z", "user": 1, "content_type": 17, "object_id": "3", "object_repr": "02. K.Y.M.S.", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2017-12-01T23:04:10.859Z", "user": 1, "content_type": 17, "object_id": "4", "object_repr": "03. Legal Canibal", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2017-12-01T23:04:14.823Z", "user": 1, "content_type": 17, "object_id": "5", "object_repr": "04. Cabal", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2017-12-01T23:04:20.828Z", "user": 1, "content_type": 17, "object_id": "6", "object_repr": "05. My Crusade", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2017-12-01T23:04:24.433Z", "user": 1, "content_type": 17, "object_id": "7", "object_repr": "06. Hester Mofet", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2017-12-01T23:04:28.329Z", "user": 1, "content_type": 17, "object_id": "8", "object_repr": "07. Ravage", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2017-12-01T23:04:33.287Z", "user": 1, "content_type": 17, "object_id": "9", "object_repr": "08. Blast My Karma", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2017-12-01T23:04:36.460Z", "user": 1, "content_type": 17, "object_id": "10", "object_repr": "09. Until We Die", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2017-12-01T23:10:34.471Z", "user": 1, "content_type": 1, "object_id": "1", "object_repr": "Vaches Folks (2017-07-07)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"date\"]}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2017-12-01T23:12:53.117Z", "user": 1, "content_type": 1, "object_id": "1", "object_repr": "Vaches Folks 2017 (2017-07-07)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"location_name\"]}}]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2017-12-01T23:14:20.150Z", "user": 1, "content_type": 1, "object_id": "2", "object_repr": "F\u00eate de la musique d'Albertville 2014 (2014-06-21)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2017-12-01T23:17:11.469Z", "user": 1, "content_type": 4, "object_id": "5", "object_repr": "Dredre", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2017-12-01T23:17:29.955Z", "user": 1, "content_type": 1, "object_id": "2", "object_repr": "F\u00eate de la musique d'Albertville 2014 (2014-06-21)", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"members\"]}}]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2017-12-01T23:18:16.334Z", "user": 1, "content_type": 1, "object_id": "3", "object_repr": "Zikolokos prend l'air 2014 (2014-09-13)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2017-12-01T23:19:27.595Z", "user": 1, "content_type": 1, "object_id": "4", "object_repr": "Anniversaire de mariage d'Hermann (2015-12-12)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2017-12-01T23:19:46.534Z", "user": 1, "content_type": 4, "object_id": "5", "object_repr": "Dredre", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"member_until\"]}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2017-12-01T23:20:36.017Z", "user": 1, "content_type": 1, "object_id": "5", "object_repr": "Chez Dre (2016-01-09)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2017-12-01T23:21:35.110Z", "user": 1, "content_type": 1, "object_id": "6", "object_repr": "F\u00eate de la musique de Gex 2016 (2016-06-21)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2017-12-01T23:22:17.448Z", "user": 1, "content_type": 1, "object_id": "7", "object_repr": "Undertown (2016-09-17)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2017-12-01T23:24:16.459Z", "user": 1, "content_type": 1, "object_id": "8", "object_repr": "Microbrasserie La Fabrique (2017-03-11)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2017-12-01T23:24:57.269Z", "user": 1, "content_type": 1, "object_id": "9", "object_repr": "Music City Tour @ Bouffon de la Taverne (2017-04-21)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2017-12-01T23:25:31.589Z", "user": 1, "content_type": 1, "object_id": "10", "object_repr": "Les P\u00e2quis Sont \u00e0 la Rue 2017 (2017-06-17)", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2017-12-01T23:27:40.955Z", "user": 1, "content_type": 17, "object_id": "11", "object_repr": "F\u00eate de la musique d'Albertville 2014: 00. Intro live 01", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2017-12-01T23:27:52.686Z", "user": 1, "content_type": 17, "object_id": "12", "object_repr": "F\u00eate de la musique d'Albertville 2014: 01. Build My Hate", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2017-12-02T11:41:36.413Z", "user": 1, "content_type": 17, "object_id": "13", "object_repr": "Vaches Folks 2017: 07. Let's Give a Hand", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2017-12-02T11:41:43.668Z", "user": 1, "content_type": 17, "object_id": "13", "object_repr": "Vaches Folks 2017: 08. Let's Give a Hand", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2017-12-02T11:41:48.355Z", "user": 1, "content_type": 17, "object_id": "9", "object_repr": "Vaches Folks 2017: 09. Blast My Karma", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2017-12-02T11:41:53.783Z", "user": 1, "content_type": 17, "object_id": "9", "object_repr": "Vaches Folks 2017: 10. Blast My Karma", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2017-12-02T11:44:39.401Z", "user": 1, "content_type": 17, "object_id": "14", "object_repr": "F\u00eate de la musique d'Albertville 2014: 01. K.Y.M.S.", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2017-12-02T11:44:47.359Z", "user": 1, "content_type": 17, "object_id": "14", "object_repr": "F\u00eate de la musique d'Albertville 2014: 02. K.Y.M.S.", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"rank\"]}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2017-12-02T11:53:16.242Z", "user": 1, "content_type": 17, "object_id": "15", "object_repr": "F\u00eate de la musique d'Albertville 2014: 03. Hester Mofet", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2017-12-02T11:53:28.167Z", "user": 1, "content_type": 17, "object_id": "16", "object_repr": "F\u00eate de la musique d'Albertville 2014: 04. Ravage", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2017-12-02T11:53:36.686Z", "user": 1, "content_type": 17, "object_id": "17", "object_repr": "F\u00eate de la musique d'Albertville 2014: 05. Let's Give a Hand", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2017-12-02T11:53:52.911Z", "user": 1, "content_type": 17, "object_id": "18", "object_repr": "F\u00eate de la musique d'Albertville 2014: 06. Motoriplash", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2017-12-02T11:54:08.214Z", "user": 1, "content_type": 17, "object_id": "19", "object_repr": "Zikolokos prend l'air 2014: 00. Intro live 01", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2017-12-02T11:54:17.165Z", "user": 1, "content_type": 17, "object_id": "20", "object_repr": "Zikolokos prend l'air 2014: 01. Build My Hate", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2017-12-02T11:54:25.645Z", "user": 1, "content_type": 17, "object_id": "21", "object_repr": "Zikolokos prend l'air 2014: 02. My Crusade", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2017-12-02T11:54:39.108Z", "user": 1, "content_type": 17, "object_id": "22", "object_repr": "Zikolokos prend l'air 2014: 03. K.Y.M.S.", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2017-12-02T11:54:55.228Z", "user": 1, "content_type": 17, "object_id": "23", "object_repr": "Zikolokos prend l'air 2014: 04. Hester Mofet", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2017-12-02T11:55:03.189Z", "user": 1, "content_type": 17, "object_id": "24", "object_repr": "Zikolokos prend l'air 2014: 05. Ravage", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2017-12-02T11:55:12.303Z", "user": 1, "content_type": 17, "object_id": "25", "object_repr": "Zikolokos prend l'air 2014: 06. Let's Give a Hand", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2017-12-02T11:55:29.375Z", "user": 1, "content_type": 17, "object_id": "26", "object_repr": "Zikolokos prend l'air 2014: 07. Motoriplash", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2017-12-02T11:55:44.900Z", "user": 1, "content_type": 17, "object_id": "27", "object_repr": "Zikolokos prend l'air 2014: 08. Build My Hate", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2017-12-02T11:56:52.630Z", "user": 1, "content_type": 17, "object_id": "28", "object_repr": "Anniversaire de mariage d'Hermann: 00. Intro live 01", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2017-12-02T11:57:02.127Z", "user": 1, "content_type": 17, "object_id": "29", "object_repr": "Anniversaire de mariage d'Hermann: 01. Build My Hate", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2017-12-02T11:57:16.527Z", "user": 1, "content_type": 17, "object_id": "30", "object_repr": "Anniversaire de mariage d'Hermann: 02. My Crusade", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2017-12-02T11:57:24.846Z", "user": 1, "content_type": 17, "object_id": "31", "object_repr": "Anniversaire de mariage d'Hermann: 03. Ravage", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2017-12-02T11:57:36.192Z", "user": 1, "content_type": 17, "object_id": "32", "object_repr": "Anniversaire de mariage d'Hermann: 04. Cabal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2017-12-02T11:57:46.749Z", "user": 1, "content_type": 17, "object_id": "33", "object_repr": "Anniversaire de mariage d'Hermann: 05. Legal Canibal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2017-12-02T11:57:57.257Z", "user": 1, "content_type": 17, "object_id": "34", "object_repr": "Anniversaire de mariage d'Hermann: 06. Until We Die", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2017-12-02T11:58:13.632Z", "user": 1, "content_type": 17, "object_id": "35", "object_repr": "Anniversaire de mariage d'Hermann: 07. Blast My Karma", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}]
+[{
+		"model": "wyd.role",
+		"pk": 1,
+		"fields": {
+			"name": "Guitar"
+		}
+	}, {
+		"model": "wyd.role",
+		"pk": 2,
+		"fields": {
+			"name": "Lead vocals"
+		}
+	}, {
+		"model": "wyd.role",
+		"pk": 3,
+		"fields": {
+			"name": "Drums"
+		}
+	}, {
+		"model": "wyd.role",
+		"pk": 4,
+		"fields": {
+			"name": "Bass"
+		}
+	}, {
+		"model": "wyd.role",
+		"pk": 5,
+		"fields": {
+			"name": "Backing vocals"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 1,
+		"fields": {
+			"name": "Effect"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 2,
+		"fields": {
+			"name": "Guitar amplifier"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 3,
+		"fields": {
+			"name": "Guitar"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 4,
+		"fields": {
+			"name": "Microphone"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 5,
+		"fields": {
+			"name": "Looper/Switcher"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 6,
+		"fields": {
+			"name": "Power supply"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 7,
+		"fields": {
+			"name": "Tuner"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 8,
+		"fields": {
+			"name": "Noise gate"
+		}
+	}, {
+		"model": "wyd.geartype",
+		"pk": 9,
+		"fields": {
+			"name": "Bass"
+		}
+	}, {
+		"model": "wyd.member",
+		"pk": 1,
+		"fields": {
+			"firstname": "Maxime",
+			"lastname": "Delrieu",
+			"pseudo": "Max",
+			"birth_date": "1978-10-05",
+			"avatar": "L_A069.tmp_zAeGiVU.PNG",
+			"member_from": "2012-01-01",
+			"member_until": null,
+			"roles": [1, 2]
+		}
+	}, {
+		"model": "wyd.member",
+		"pk": 2,
+		"fields": {
+			"firstname": "David",
+			"lastname": "Billard",
+			"pseudo": "David",
+			"birth_date": "1979-05-10",
+			"avatar": "billard.jpg",
+			"member_from": "2012-01-01",
+			"member_until": null,
+			"roles": [3]
+		}
+	}, {
+		"model": "wyd.member",
+		"pk": 3,
+		"fields": {
+			"firstname": "Benjamin",
+			"lastname": "Vincent",
+			"pseudo": "Benji",
+			"birth_date": "1989-12-05",
+			"avatar": "Benji.jpg",
+			"member_from": "2012-01-01",
+			"member_until": null,
+			"roles": [4, 5]
+		}
+	}, {
+		"model": "wyd.member",
+		"pk": 4,
+		"fields": {
+			"firstname": "Pierre-Yves",
+			"lastname": "Kugler",
+			"pseudo": "Pyk",
+			"birth_date": "1995-04-18",
+			"avatar": "Pyk.jpg",
+			"member_from": "2015-01-01",
+			"member_until": null,
+			"roles": [1, 5]
+		}
+	}, {
+		"model": "wyd.member",
+		"pk": 5,
+		"fields": {
+			"firstname": "Andr\u00e9",
+			"lastname": "Schmickler",
+			"pseudo": "Dredre",
+			"birth_date": "1991-09-28",
+			"avatar": "dredre.jpg",
+			"member_from": "2014-01-01",
+			"member_until": "2015-08-31",
+			"roles": [1]
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 1,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "Dunlop Cry Baby"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 2,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "EHX East River Drive"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 3,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "EHX Hot Tubes Nano"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 4,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "EHX Neo Clone"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 5,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "EHX Neo Mistress"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 6,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "MXR Phaser Phase 90"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 7,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "G-Lab Smooth Delay SD-1"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 8,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "Morley Alligator Volume"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 9,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "Visual Sound Garagetone Tremolo"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 10,
+		"fields": {
+			"type": 1,
+			"member": 1,
+			"name": "MXR 10-Band Graphic EQ M108"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 11,
+		"fields": {
+			"type": 2,
+			"member": 1,
+			"name": "Peavey XXX II w/ Marshall 1960AV Cabinet"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 12,
+		"fields": {
+			"type": 2,
+			"member": 1,
+			"name": "Marshall JCM 2000 DSL 401"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 13,
+		"fields": {
+			"type": 3,
+			"member": 1,
+			"name": "Jackson RR"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 14,
+		"fields": {
+			"type": 3,
+			"member": 1,
+			"name": "Jackson Kelly"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 15,
+		"fields": {
+			"type": 3,
+			"member": 1,
+			"name": "Chapman Ghostfret"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 16,
+		"fields": {
+			"type": 4,
+			"member": 1,
+			"name": "Shure 55 w/ custom bent stand"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 17,
+		"fields": {
+			"type": 5,
+			"member": 1,
+			"name": "G-Lab GSC-3"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 18,
+		"fields": {
+			"type": 5,
+			"member": 1,
+			"name": "G-Lab MIDI 2x Loop M2L (x2)"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 19,
+		"fields": {
+			"type": 6,
+			"member": 1,
+			"name": "Flatliner SIX"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 20,
+		"fields": {
+			"type": 6,
+			"member": 1,
+			"name": "G-Lab 8 Separated 9V Power Box PB-1"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 21,
+		"fields": {
+			"type": 7,
+			"member": 1,
+			"name": "Planet Waves PW-CT-11 Tru-Strobe Tuner"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 22,
+		"fields": {
+			"type": 8,
+			"member": 1,
+			"name": "ISP Noise Gate Decimator G String"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 23,
+		"fields": {
+			"type": 9,
+			"member": 3,
+			"name": "Schecter Hellaiser Extreme 5"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 24,
+		"fields": {
+			"type": 9,
+			"member": 3,
+			"name": "LTD B-1005"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 25,
+		"fields": {
+			"type": 1,
+			"member": 3,
+			"name": "Dunlop Bass Q Crybaby Wha"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 26,
+		"fields": {
+			"type": 1,
+			"member": 3,
+			"name": "Bass Overdrive Boss ODB-3"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 27,
+		"fields": {
+			"type": 1,
+			"member": 3,
+			"name": "T-Rex Tonebug Chorus/Flanger"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 28,
+		"fields": {
+			"type": 7,
+			"member": 3,
+			"name": "Planet Waves PW-CT-11 Tru-Strobe Tuner"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 29,
+		"fields": {
+			"type": 1,
+			"member": 3,
+			"name": "Zvex Fuzz"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 30,
+		"fields": {
+			"type": 3,
+			"member": 4,
+			"name": "ESP LTD M-400"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 31,
+		"fields": {
+			"type": 3,
+			"member": 4,
+			"name": "Jackson Warrior"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 32,
+		"fields": {
+			"type": 3,
+			"member": 4,
+			"name": "Gibson Les Paul"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 33,
+		"fields": {
+			"type": 1,
+			"member": 4,
+			"name": "Visual Sound Double Trouble"
+		}
+	}, {
+		"model": "wyd.gear",
+		"pk": 34,
+		"fields": {
+			"type": 7,
+			"member": 4,
+			"name": "Boss TU-3"
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 1,
+		"fields": {
+			"title": "Build My Hate",
+			"duration": "00:03:07",
+			"lyrics": "Your mouth is full of lies\r\nPretending to teach us\r\nWhat's good or bad for us\r\nThinking of you\r\n\r\nServing your interest\r\nPlayin' the super hero\r\nWith ease because you're not\r\nIn the front\r\n\r\n[Chorus]\r\nThose people are dangerous\r\nYou lie to all of us\r\nThey will kill everyone\r\nYou just believe yourself\r\nThe threatening is from out there\r\nI won't allow you to\r\nBuild my hate you know\r\n\r\nInvoking will of god\r\nYou try to blind us all\r\nTo be sure you'll be heard\r\nHolier is better\r\n\r\nYou think that speaking loud\r\nAssure you attention\r\nBut don't you see we're replete\r\nWith the shit you feed\r\n\r\n[Chorus]\r\n\r\nI won't let you build my\r\nHAAAAATE\r\nBuild my hate you know\r\nBuil-my-hate-you-know",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 2,
+		"fields": {
+			"title": "Hester Mofet",
+			"duration": "00:07:08",
+			"lyrics": "Hester Mofet\u2019s been broken\r\nShe was living with no problem\r\n\u2018N then she met a hurricane\r\nBut nobody have seen her again\r\n\r\nHester Mofet has been ruined\r\nToughly hurt by any mean\r\nPersecuted in deep sorrow\r\nAll she has left is her shadow\r\n\r\n[Chorus]\r\nHester Mofet is still alive\r\nAnd if one day she would have died\r\nHer body starts to come undone\r\nThen resurrecting from the dark\r\nHester Mofet is gonna burn\r\nAnd even swallowed by the flames\r\nTot\u2019ly reduced to smoky ash\r\nShe seems to be a fire-bird\r\nTurning to life again\r\nHester Mofet has been raped\r\nHer mind has been hard twisted\r\nShe was trampled so much times\r\nSo she was buried in the ground\r\n\r\nHester Mofet\u2019s compromised\r\nShe\u2019s been taken by surprise\r\nHer back has just felt the knife\r\nAnd then she fell within the night\r\n\r\n[Chorus]\r\n\r\nHester Mofet has been mistreated\r\nSo much of us witnessed it\r\nBut just a few has helped her stand\r\nSo blind we are from some misdeed\r\n\r\nHester Mofet !!!\r\n\r\nNO! NO! NO NO NO NO!",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 3,
+		"fields": {
+			"title": "Let's Give a Hand",
+			"duration": "00:05:06",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 4,
+		"fields": {
+			"title": "Motoriplash",
+			"duration": "00:05:00",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 5,
+		"fields": {
+			"title": "Ravage",
+			"duration": "00:06:38",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 6,
+		"fields": {
+			"title": "K.Y.M.S.",
+			"duration": "00:04:30",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 7,
+		"fields": {
+			"title": "My Crusade",
+			"duration": "00:03:21",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 8,
+		"fields": {
+			"title": "Cabal",
+			"duration": "00:03:48",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 9,
+		"fields": {
+			"title": "Legal Canibal",
+			"duration": "00:03:43",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 10,
+		"fields": {
+			"title": "Blast My Karma",
+			"duration": "00:04:00",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 11,
+		"fields": {
+			"title": "Until We Die",
+			"duration": "00:03:00",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 12,
+		"fields": {
+			"title": "Fallen Prince",
+			"duration": "00:03:20",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.song",
+		"pk": 13,
+		"fields": {
+			"title": "Intro live 01",
+			"duration": "00:30:00",
+			"lyrics": "",
+			"authors": [1],
+			"compositors": [1]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 1,
+		"fields": {
+			"location_name": "Vaches Folks 2017",
+			"location": "",
+			"poster": "",
+			"date": "2017-07-07",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 2,
+		"fields": {
+			"location_name": "F\u00eate de la musique d'Albertville 2014",
+			"location": "",
+			"poster": "",
+			"date": "2014-06-21",
+			"members": [1, 2, 3, 5]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 3,
+		"fields": {
+			"location_name": "Zikolokos prend l'air 2014",
+			"location": "",
+			"poster": "",
+			"date": "2014-09-13",
+			"members": [1, 2, 3, 5]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 4,
+		"fields": {
+			"location_name": "Anniversaire de mariage d'Hermann",
+			"location": "",
+			"poster": "",
+			"date": "2015-12-12",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 5,
+		"fields": {
+			"location_name": "Chez Dre",
+			"location": "",
+			"poster": "",
+			"date": "2016-01-09",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 6,
+		"fields": {
+			"location_name": "F\u00eate de la musique de Gex 2016",
+			"location": "",
+			"poster": "",
+			"date": "2016-06-21",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 7,
+		"fields": {
+			"location_name": "Undertown",
+			"location": "",
+			"poster": "",
+			"date": "2016-09-17",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 8,
+		"fields": {
+			"location_name": "Microbrasserie La Fabrique",
+			"location": "",
+			"poster": "",
+			"date": "2017-03-11",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 9,
+		"fields": {
+			"location_name": "Music City Tour @ Bouffon de la Taverne",
+			"location": "",
+			"poster": "",
+			"date": "2017-04-21",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.concert",
+		"pk": 10,
+		"fields": {
+			"location_name": "Les P\u00e2quis Sont \u00e0 la Rue 2017",
+			"location": "",
+			"poster": "",
+			"date": "2017-06-17",
+			"members": [1, 2, 3, 4]
+		}
+	}, {
+		"model": "wyd.record",
+		"pk": 1,
+		"fields": {
+			"title": "Who's Your EP",
+			"artwork": ""
+		}
+	}, {
+		"model": "wyd.recordtrack",
+		"pk": 1,
+		"fields": {
+			"record": 1,
+			"song": 1,
+			"rank": 1
+		}
+	}, {
+		"model": "wyd.recordtrack",
+		"pk": 2,
+		"fields": {
+			"record": 1,
+			"song": 9,
+			"rank": 2
+		}
+	}, {
+		"model": "wyd.recordtrack",
+		"pk": 3,
+		"fields": {
+			"record": 1,
+			"song": 5,
+			"rank": 3
+		}
+	}, {
+		"model": "wyd.recordtrack",
+		"pk": 4,
+		"fields": {
+			"record": 1,
+			"song": 11,
+			"rank": 4
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 1,
+		"fields": {
+			"concert": 1,
+			"song": 13,
+			"rank": 0
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 2,
+		"fields": {
+			"concert": 1,
+			"song": 1,
+			"rank": 1
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 3,
+		"fields": {
+			"concert": 1,
+			"song": 6,
+			"rank": 2
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 4,
+		"fields": {
+			"concert": 1,
+			"song": 9,
+			"rank": 3
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 5,
+		"fields": {
+			"concert": 1,
+			"song": 8,
+			"rank": 4
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 6,
+		"fields": {
+			"concert": 1,
+			"song": 7,
+			"rank": 5
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 7,
+		"fields": {
+			"concert": 1,
+			"song": 2,
+			"rank": 6
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 8,
+		"fields": {
+			"concert": 1,
+			"song": 5,
+			"rank": 7
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 9,
+		"fields": {
+			"concert": 1,
+			"song": 10,
+			"rank": 10
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 10,
+		"fields": {
+			"concert": 1,
+			"song": 11,
+			"rank": 9
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 11,
+		"fields": {
+			"concert": 2,
+			"song": 13,
+			"rank": 0
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 12,
+		"fields": {
+			"concert": 2,
+			"song": 1,
+			"rank": 1
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 13,
+		"fields": {
+			"concert": 1,
+			"song": 3,
+			"rank": 8
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 14,
+		"fields": {
+			"concert": 2,
+			"song": 6,
+			"rank": 2
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 15,
+		"fields": {
+			"concert": 2,
+			"song": 2,
+			"rank": 3
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 16,
+		"fields": {
+			"concert": 2,
+			"song": 5,
+			"rank": 4
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 17,
+		"fields": {
+			"concert": 2,
+			"song": 3,
+			"rank": 5
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 18,
+		"fields": {
+			"concert": 2,
+			"song": 4,
+			"rank": 6
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 19,
+		"fields": {
+			"concert": 3,
+			"song": 13,
+			"rank": 0
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 20,
+		"fields": {
+			"concert": 3,
+			"song": 1,
+			"rank": 1
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 21,
+		"fields": {
+			"concert": 3,
+			"song": 7,
+			"rank": 2
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 22,
+		"fields": {
+			"concert": 3,
+			"song": 6,
+			"rank": 3
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 23,
+		"fields": {
+			"concert": 3,
+			"song": 2,
+			"rank": 4
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 24,
+		"fields": {
+			"concert": 3,
+			"song": 5,
+			"rank": 5
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 25,
+		"fields": {
+			"concert": 3,
+			"song": 3,
+			"rank": 6
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 26,
+		"fields": {
+			"concert": 3,
+			"song": 4,
+			"rank": 7
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 27,
+		"fields": {
+			"concert": 3,
+			"song": 1,
+			"rank": 8
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 28,
+		"fields": {
+			"concert": 4,
+			"song": 13,
+			"rank": 0
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 29,
+		"fields": {
+			"concert": 4,
+			"song": 1,
+			"rank": 1
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 30,
+		"fields": {
+			"concert": 4,
+			"song": 7,
+			"rank": 2
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 31,
+		"fields": {
+			"concert": 4,
+			"song": 5,
+			"rank": 3
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 32,
+		"fields": {
+			"concert": 4,
+			"song": 8,
+			"rank": 4
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 33,
+		"fields": {
+			"concert": 4,
+			"song": 9,
+			"rank": 5
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 34,
+		"fields": {
+			"concert": 4,
+			"song": 11,
+			"rank": 6
+		}
+	}, {
+		"model": "wyd.concertsetlist",
+		"pk": 35,
+		"fields": {
+			"concert": 4,
+			"song": 10,
+			"rank": 7
+		}
+	}
+]
