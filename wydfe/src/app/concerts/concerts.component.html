@@ -1,3 +1,11 @@
-<p>
-  concerts works!
-</p>
+<h2>Concerts</h2>
+<ul class="concerts">
+    <li *ngFor="let concert of concerts" [class.selected]="concert === selectedConcert" (click)="onSelect(concert)">
+        <div>{{concert.location_name}}</div>
+        <div>tracks:
+            <ul>
+                <li *ngFor="let song of concert.concertsetlist_set">{{song.rank}}. {{song.title}}</li>
+            </ul>
+        </div>
+    </li>
+</ul>

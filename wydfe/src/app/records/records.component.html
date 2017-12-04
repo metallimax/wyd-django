@@ -1,3 +1,11 @@
-<p>
-  records works!
-</p>
+<h2>Records</h2>
+<ul class="records">
+    <li *ngFor="let record of records" [class.selected]="record === selectedRecord" (click)="onSelect(record)">
+        <div>{{record.title}}</div>
+        <div>tracks:
+            <ul>
+                <li *ngFor="let track of record.recordtrack_set">{{track.rank}}. {{track.title}}</li>
+            </ul>
+        </div>
+    </li>
+</ul>
