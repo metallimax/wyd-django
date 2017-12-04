@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { SongsComponent } from './songs/songs.component';
 import { SongService } from './song.service';
 import { UrlService } from './url.service';
+import { ConcertService } from './concert.service';
+import { RecordService } from './record.service';
 
 
 @NgModule({
@@ -28,7 +30,7 @@ import { UrlService } from './url.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [MemberService, MessageService, SongService, UrlService],
+  providers: [MemberService, MessageService, SongService, UrlService, ConcertService, RecordService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

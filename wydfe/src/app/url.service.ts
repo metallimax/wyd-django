@@ -14,7 +14,7 @@ export class UrlService {
   getWebserviceUrl(path: string): string {
     return this.webserviceUrl + this.normalizePath(path);
   }
-  
+
   getMediaUrl(path: string): string {
     return this.mediaUrl + this.normalizePath(path);
   }

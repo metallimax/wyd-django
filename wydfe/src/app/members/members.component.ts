@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Member } from '../member';
 import { MemberService } from '../member.service';
+import { UrlService } from '../url.service';
 
 @Component({
   selector: 'app-members',
@@ -14,15 +15,15 @@ export class MembersComponent implements OnInit {
 
   active: boolean;
 
-  constructor(private memberService: MemberService) { }
+  constructor(private memberService: MemberService, public urlService: UrlService) { }
 
   isActive(member: Member): boolean {
     return member.member_until == null;
   }
-  
-    isInactive(member: Member): boolean {
-      return member.member_until != null;
-    }
+
+  isInactive(member: Member): boolean {
+    return member.member_until != null;
+  }
 
   getActiveMembers(active: boolean): Member[] {
     if(!active) {

@@ -31,7 +31,7 @@ class MemberSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Member
-        fields = ('name', 'avatar_url', 'member_until', 'gears', 'roles', )
+        fields = ('name', 'avatar', 'member_until', 'gears', 'roles', )
 
 
 class MemberViewSet(viewsets.ModelViewSet):

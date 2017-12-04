@@ -1,10 +1,9 @@
 <h2>Members</h2>
 <ul class="members">
-    <li *ngFor="let member of getActiveMembers(active)"
-     [class.selected]="member === selectedMember" (click)="onSelect(member)">
-        <img src="http://127.0.0.1:8000{{member.avatar_url}}" />
+    <li *ngFor="let member of getActiveMembers(active)" [class.selected]="member === selectedMember" (click)="onSelect(member)">
+        <img class="avatar" src="{{member.avatar}}" />
         <div>{{member.name}}</div>
-        <div>roles: 
+        <div>roles:
             <ul>
                 <li *ngFor="let role of member.roles">{{role.name}}</li>
             </ul>

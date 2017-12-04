@@ -48,9 +48,6 @@ class Member(models.Model):
     def name(self):
         return self.pseudo or ("%s %s" % (self.firstname, self.lastname,))
 
-    def avatar_url(self):
-        return os.path.join(settings.MEDIA_URL, self.avatar.name)
-
     def __str__(self):
         return self.name()
 

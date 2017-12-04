@@ -5,7 +5,7 @@ class Gear {
 
 export class Member {
   name: string;
-  avatar_url: string;
+  avatar: string;
   member_until: string;
   gears: Gear[];
   roles: string[];
